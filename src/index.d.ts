@@ -40,7 +40,7 @@ declare namespace LuauPolyfill {
 	interface ErrorConstructor {
 		new (message?: string): Error;
 		(message?: string): Error;
-		readonly captureStackTrace: (error: Error, options: Callback) => void;
+		readonly captureStackTrace: (error: Error, options?: Callback) => void;
 	}
 	export const Error: ErrorConstructor;
 
