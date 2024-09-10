@@ -1,0 +1,4 @@
+{
+	"name": "luau-polyfill",
+	"tree": { "$path": "src" }
+}
