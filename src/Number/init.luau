@@ -1,12 +1,13 @@
 --!strict
 return {
-	isFinite = require(script.isFinite),
-	isInteger = require(script.isInteger),
-	isNaN = require(script.isNaN),
-	isSafeInteger = require(script.isSafeInteger),
-	toExponential = require(script.toExponential),
+	isFinite = require(script.isFinite);
+	isInteger = require(script.isInteger);
+	isNaN = require(script.isNaN);
+	isSafeInteger = require(script.isSafeInteger);
+	toExponential = require(script.toExponential);
+	Number = require(script.Number);
 
-	MAX_SAFE_INTEGER = require(script.MAX_SAFE_INTEGER),
-	MIN_SAFE_INTEGER = require(script.MIN_SAFE_INTEGER),
-	NaN = 0 / 0,
+	MAX_SAFE_INTEGER = require(script.MAX_SAFE_INTEGER);
+	MIN_SAFE_INTEGER = require(script.MIN_SAFE_INTEGER);
+	NaN = 0 / 0;
 }

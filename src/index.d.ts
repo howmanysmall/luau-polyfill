@@ -1,4 +1,5 @@
 import * as Collections from "./Collections";
+import * as MathLibrary from "./Math";
 
 interface Match {
 	readonly index: number;
@@ -152,6 +153,12 @@ declare namespace LuauPolyfill {
 		 * @param fractionDigits Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.
 		 */
 		export function toExponential(number: number | string, fractionDigits?: number): string | undefined;
+
+		/**
+		 * Converts a value to a number. If it fails, it returns NaN.
+		 * @param value
+		 */
+		export function Number(value?: unknown): number;
 	}
 	export namespace String {
 		/**
@@ -230,6 +237,7 @@ declare namespace LuauPolyfill {
 		/** Removes the leading white space and line terminator characters from a string. */
 		export function trimStart(value: string): string;
 	}
+	export const Math: typeof MathLibrary;
 
 	export namespace console {
 		/**
