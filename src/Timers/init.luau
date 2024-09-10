@@ -1,10 +1,9 @@
 --!strict
 local Packages = script.Parent
+local Object = require(Packages.Collections).ObjectUtilities
 
-local Object = require(Packages.Collections).Object
-
-local makeTimerImpl = require(script.makeTimerImpl)
 local makeIntervalImpl = require(script.makeIntervalImpl)
+local makeTimerImpl = require(script.makeTimerImpl)
 
 export type Timeout = makeTimerImpl.Timeout
 export type Interval = makeIntervalImpl.Interval
