@@ -1,6 +1,7 @@
 /* eslint-disable unicorn/filename-case */
 
-import { isFinite } from "./Number";
+import type NumberNamespace from "./Number";
+const { isFinite } = require(script.Parent!.FindFirstChild("Number")! as ModuleScript) as typeof NumberNamespace;
 
 export const E = math.exp(1);
 export const LN2 = math.log(2);
