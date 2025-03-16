@@ -18,5 +18,6 @@ local SymbolObject = setmetatable({}, {
 })
 
 SymbolObject.for_ = GlobalRegistry.getOrInit
+SymbolObject["for"] = GlobalRegistry.getOrInit
 
 return SymbolObject
